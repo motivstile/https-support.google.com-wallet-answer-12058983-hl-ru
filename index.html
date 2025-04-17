@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Добавить банковскую карту</h2>
+    <form id="card-form">
+      <label>
+        Номер карты:
+        <input type="text" id="card-number" required maxlength="19" placeholder="0000 0000 0000 0000">
+        <span class="error" id="card-number-error">Введите номер карты.</span>
+      </label>
+
+      <label>
+        Срок действия (MM / ГГ):
+        <input type="text" id="expiry" required maxlength="5" placeholder="MM/YY">
+      </label>
+
+      <label>
+        CVC-код:
+        <input type="text" id="cvc" required maxlength="3" placeholder="CVC">
+      </label>
+
+      <label>
+        Имя владельца карты:
+        <input type="text" id="card-holder" required>
+        <span class="error" id="card-holder-error">Необходимо указать имя владельца карты.</span>
+      </label>
+
+      <button type="submit">Добавить карту</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
