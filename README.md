@@ -1,0 +1,1 @@
+# https-support.google.com-wallet-answer-12058983-hl-ru
